@@ -69,4 +69,16 @@ p {
 .final-grade {
   color: red;
 }
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 40%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
