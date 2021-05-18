@@ -39,3 +39,19 @@ p {
 .input {
   padding: 3rem;
 }
+
+.input-grade {
+  padding: 2rem 3rem;
+  font-size: 2rem;
+  font-family: inherit;
+}
+
+.btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem 3rem;
+  cursor: pointer;
+}
