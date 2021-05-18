@@ -18,14 +18,6 @@ document.querySelector(".add").addEventListener("click", function () {
     displayGrades(`Notele sunt: ${arr}`);
     document.querySelector(".input-grade").value = "";
   }
-});
-
-const finalGrade = function (finalgrade) {
-  document.querySelector(".final-grade").textContent = finalgrade;
-};
-
-// Butonul pentru a calcula media aritmetica a notelor
-document.querySelector(".calc").addEventListener("click", function () {
   let sum = 0;
   for (let i = 0; i < arr.length; i++) {
     sum += arr[i];
@@ -33,6 +25,10 @@ document.querySelector(".calc").addEventListener("click", function () {
   finalGrade(sum / arr.length);
   document.querySelector(".input-grade").value = "";
 });
+
+const finalGrade = function (finalgrade) {
+  document.querySelector(".final-grade").textContent = finalgrade;
+};
 
 // Butonul pentru a sterge datele(refresh)
 document.querySelector(".delete").addEventListener("click", function () {

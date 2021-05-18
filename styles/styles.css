@@ -61,3 +61,7 @@ p {
 .buttons {
   padding: 3rem;
 }
+
+.final-grade {
+  color: red;
+}
