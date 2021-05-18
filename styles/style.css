@@ -5,24 +5,17 @@
           box-sizing: inherit;
 }
 
-* html {
-  font-size: 62.5%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-* html body {
+body {
   font-family: monospace;
   color: #eee;
-  background-color: #222;
 }
 
-* html body header {
+body header {
   text-align: center;
   padding: 10rem;
 }
 
-* html body main {
+body main {
   text-align: center;
   color: #eee;
   -webkit-box-align: center;
@@ -30,6 +23,13 @@
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #222;
 }
 
 h1 {

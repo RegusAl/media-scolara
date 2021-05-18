@@ -2,27 +2,29 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  html {
-    font-size: 62.5%;
-    box-sizing: border-box;
-    body {
-      font-family: monospace;
-      color: #eee;
-      background-color: #222;
-      header {
-        text-align: center;
-        padding: 10rem;
-      }
-      main {
-        text-align: center;
-        color: #eee;
-        align-items: center;
-        justify-content: space-around;
-      }
-    }
+}
+
+body {
+  font-family: monospace;
+  color: #eee;
+
+  header {
+    text-align: center;
+    padding: 10rem;
+  }
+  main {
+    text-align: center;
+    color: #eee;
+    align-items: center;
+    justify-content: space-around;
   }
 }
 
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  background-color: #222;
+}
 h1 {
   font-size: 8rem;
 }
