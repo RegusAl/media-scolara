@@ -8,8 +8,21 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
+    <header>
+      <h1>Media Scolara</h1>
+    </header>
     <main>
-        
+      <p>Aplicatie web pentru a calcula media notelor</p>
+      <section class="left">
+        <input type="number" class="grade" />
+        <button class="btn add">Adauga!</button>
+        <button class="btn calc">Calculeaza!</button>
+      </section>
+      <section class="right">
+        <p>Notele:</p>
+        <p class="grades"></p>
+        <p class="final">Nota finala este:<span class="final-grade">0</span></p>
+      </section>
     </main>
     <script src="./script.js"></script>
   </body>
