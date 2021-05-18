@@ -16,6 +16,7 @@ document.querySelector(".add").addEventListener("click", function () {
   } else {
     arr.push(grade);
     displayGrades(arr);
+    document.querySelector(".input-grade").value = "";
   }
 });
 
@@ -23,10 +24,19 @@ const finalGrade = function (finalgrade) {
   document.querySelector(".final-grade").textContent = finalgrade;
 };
 
+// Butonul pentru a calcula media aritmetica a notelor
 document.querySelector(".calc").addEventListener("click", function () {
   let sum = 0;
   for (let i = 0; i < arr.length; i++) {
     sum += arr[i];
   }
   finalGrade(sum / arr.length);
+});
+
+// Butonul pentru a sterge datele(refresh)
+document.querySelector(".delete").addEventListener("click", function () {
+  arr = [];
+  document.querySelector(".grades").textContent = "";
+  document.querySelector(".final-grade").textContent = "";
+  document.querySelector(".input-grade").value = "";
 });
