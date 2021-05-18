@@ -1,31 +1,35 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
-html {
+* html {
   font-size: 62.5%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-body {
+* html body {
   font-family: monospace;
   color: #eee;
   background-color: #222;
-  /* background-color: #60b347; */
 }
 
-header {
+* html body header {
   text-align: center;
   padding: 10rem;
 }
 
-main {
+* html body main {
   text-align: center;
   color: #eee;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 h1 {
@@ -65,3 +69,4 @@ p {
 .final-grade {
   color: red;
 }
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    body {
+      font-family: monospace;
+      color: #eee;
+      background-color: #222;
+      header {
+        text-align: center;
+        padding: 10rem;
+      }
+      main {
+        text-align: center;
+        color: #eee;
+        align-items: center;
+        justify-content: space-around;
+      }
+    }
+  }
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+p {
+  font-size: 3.2rem;
+  padding: 1rem;
+}
+
+.input {
+  padding: 3rem;
+}
+
+.input-grade {
+  padding: 2rem 3rem;
+  font-size: 2rem;
+  font-family: inherit;
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem 3rem;
+  cursor: pointer;
+}
+
+.buttons {
+  padding: 3rem;
+}
+
+.final-grade {
+  color: red;
+}

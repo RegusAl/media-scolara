@@ -1,4 +1,5 @@
 "use strict";
+
 let arr = [];
 
 const displayGrades = function (grades) {
