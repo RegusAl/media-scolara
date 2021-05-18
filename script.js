@@ -12,10 +12,10 @@ document.querySelector(".add").addEventListener("click", function () {
   if (!grade) {
     displayGrades("!!!Inserati un numar!!!");
   } else if (grade <= 0 || grade > 10) {
-    displayGrades("Inserati o nota reala");
+    displayGrades("!!!Inserati o nota reala!!!");
   } else {
     arr.push(grade);
-    displayGrades(arr);
+    displayGrades(`Notele sunt: ${arr}`);
     document.querySelector(".input-grade").value = "";
   }
 });
@@ -31,6 +31,7 @@ document.querySelector(".calc").addEventListener("click", function () {
     sum += arr[i];
   }
   finalGrade(sum / arr.length);
+  document.querySelector(".input-grade").value = "";
 });
 
 // Butonul pentru a sterge datele(refresh)
