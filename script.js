@@ -7,7 +7,7 @@ const displayGrades = function (grades) {
 };
 
 // Butonul pentru a adauga notele
-document.querySelector(".add").addEventListener("click", function () {
+const inputGrades = function () {
   let grade = Number(document.querySelector(".input-grade").value);
   //console.log(grade, typeof grade);
   if (!grade) {
@@ -25,6 +25,10 @@ document.querySelector(".add").addEventListener("click", function () {
   }
   finalGrade(sum / arr.length);
   document.querySelector(".input-grade").value = "";
+};
+
+document.querySelector(".add").addEventListener("click", function () {
+  inputGrades();
 });
 
 const finalGrade = function (finalgrade) {
