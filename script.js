@@ -9,8 +9,10 @@ const displayGrades = function (grades) {
 const displayPassed = function (finalgrade) {
   if (finalgrade > 1 && finalgrade < 5) {
     document.querySelector(".passed").textContent = "Nu ai trecut clasa!!!";
+    document.querySelector(".passed").style.color = "red";
   } else if (finalgrade >= 5 && finalgrade <= 10) {
     document.querySelector(".passed").textContent = "Ai trecut clasa!!!";
+    document.querySelector(".passed").style.color = "green";
   }
 };
 
@@ -48,7 +50,7 @@ const finalGrade = function (finalgrade) {
 document.querySelector(".delete").addEventListener("click", function () {
   arr = [];
   document.querySelector(".grades").textContent = "";
-  document.querySelector(".final-grade").textContent = "";
+  document.querySelector(".final-grade").textContent = "0";
   document.querySelector(".input-grade").value = "";
   document.querySelector(".passed").textContent = "";
 });
