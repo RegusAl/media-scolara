@@ -6,6 +6,14 @@ const displayGrades = function (grades) {
   document.querySelector(".grades").textContent = grades;
 };
 
+const displayPassed = function (finalgrade) {
+  if (finalgrade > 1 && finalgrade < 5) {
+    document.querySelector(".passed").textContent = "Nu ai trecut clasa!!!";
+  } else if (finalgrade >= 5 && finalgrade <= 10) {
+    document.querySelector(".passed").textContent = "Ai trecut clasa!!!";
+  }
+};
+
 // Butonul pentru a adauga notele
 const inputGrades = function () {
   let grade = Number(document.querySelector(".input-grade").value);
@@ -24,6 +32,7 @@ const inputGrades = function () {
     sum += arr[i];
   }
   finalGrade(sum / arr.length);
+  displayPassed(sum / arr.length);
   document.querySelector(".input-grade").value = "";
 };
 
@@ -41,4 +50,5 @@ document.querySelector(".delete").addEventListener("click", function () {
   document.querySelector(".grades").textContent = "";
   document.querySelector(".final-grade").textContent = "";
   document.querySelector(".input-grade").value = "";
+  document.querySelector(".passed").textContent = "";
 });
