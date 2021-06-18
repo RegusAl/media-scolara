@@ -71,6 +71,17 @@ p {
   color: red;
 }
 
+footer {
+  padding: 4rem;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #eee;
+}
+
 @media screen and (max-width: 600px) {
   html {
     font-size: 50%;
