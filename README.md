@@ -4,4 +4,4 @@ Aplicatie web pentru a calcula media notelor
 
 ## Demo:
 
-<img src="demo.png"></img>
+<img src="./assets/demo.png"></img>
