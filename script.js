@@ -26,7 +26,7 @@ const inputGrades = function () {
     displayGrades("!!!Inserati o nota reala!!!");
   } else {
     arr.push(grade);
-    displayGrades(`Notele sunt: ${arr}`);
+    displayGrades(`Notele sunt: ${arr} `);
     document.querySelector(".input-grade").value = "";
   }
   let sum = 0;
